@@ -30,4 +30,4 @@ COPY ruby-jq-bindings ./ruby-jq-bindings
 WORKDIR ruby-jq-bindings
 RUN ruby extconf.rb && make
 
-CMD ruby test.rb
+ENTRYPOINT ["ruby", "test.rb"]

@@ -1,7 +1,7 @@
 
 # Libjq with ruby bindings debugger
 
-Using the jq command line tool:
+Using the [jq](https://jqplay.org/s/J_typLJjIK) command line tool:
 
 ```shell
 jq 'scan("foo(.+)")' <<< '"foobar"'
@@ -13,18 +13,18 @@ outputs:
 ]
 ```
 
-but using jqlib with ruby returns empty string `[""]`.
+but using **libjq** with **ruby** returns empty string `[""]`.
 
-### Run test using Docker image
+### Run test using docker image
 
 Build image using:
 ```shell
-docker build -t libjq-ruby-test .
+docker build -t libjq-test .
 ```
 
 Run test using:
 ```shell
-docker run libjq-ruby-test
+docker run -it libjq-test
 ```
 
 Output (note the empty capture at 0017):
