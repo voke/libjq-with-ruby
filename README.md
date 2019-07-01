@@ -22,7 +22,7 @@ Build image using:
 docker build -t libjq-ruby-test .
 ```
 
-Run using:
+Run test using:
 ```shell
 docker run libjq-ruby-test
 ```
