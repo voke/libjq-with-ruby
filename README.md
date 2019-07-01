@@ -17,13 +17,10 @@ but using **libjq** with **ruby** returns empty string `[""]`.
 
 ### Run test using docker image
 
-Build image using:
-```shell
-docker build -t libjq-test .
 ```
-
-Run test using:
-```shell
+git clone https://github.com/voke/libjq-with-ruby-debug
+cd libjq-with-ruby-debug
+docker build -t libjq-test .
 docker run -it libjq-test
 ```
 
