@@ -17,12 +17,12 @@ but using jqlib with ruby returns empty string `[""]`.
 
 ### Run test using Docker image
 
-Run
+Build image using:
 ```shell
 docker build -t libjq-ruby-test .
 ```
 
-Run
+Run using:
 ```shell
 docker run libjq-ruby-test
 ```
@@ -105,7 +105,3 @@ V0 = [""] (1)
 0056 RET	["" (1)] (1)
 0007 RET	["" (1)] (1)
 ```
-
-### Run locally
-
-Run `cd ruby-jq-bindings && ruby extconf.rb && make && ruby test.rb`
