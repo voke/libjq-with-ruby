@@ -7,7 +7,7 @@ Using the [jq](https://jqplay.org/s/J_typLJjIK) command line tool:
 jq 'scan("foo(.+)")' <<< '"foobar"'
 ```
 outputs:
-```
+```json
 [
   "bar"
 ]
@@ -15,7 +15,7 @@ outputs:
 
 but using **libjq** with **ruby** returns empty string `[""]`.
 
-### Run test using docker image
+### Steps to Reproduce the Issue
 
 ```
 git clone https://github.com/voke/libjq-with-ruby-debug
