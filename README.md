@@ -20,8 +20,8 @@ but using **libjq** with **ruby** returns empty string `[""]`.
 ```
 git clone https://github.com/voke/libjq-with-ruby-debug
 cd libjq-with-ruby-debug
-docker build -t libjq-test .
-docker run -it libjq-test
+docker build -t libjq-ruby-ubuntu .
+docker run -it libjq-ruby-ubuntu
 ```
 
 Output (note the empty capture at 0017):
